@@ -49,9 +49,6 @@ header {
     display: flex;
 }
 
-.header-container .search {
-  
-}
 
 .header-container .search input {
     outline: 0;
