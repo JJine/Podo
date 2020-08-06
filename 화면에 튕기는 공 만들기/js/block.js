@@ -21,7 +21,7 @@ export class Block {
         ctx.beginPath();
         ctx.moveTo(this.maxX, this.maxY);
         ctx.lineTo(this.maxX - xGap, this.maxY + yGap);
-        ctx.lineTo(this.x - xGap, this.maxY + this.yGap);
+        ctx.lineTo(this.x - xGap, this.maxY + yGap);
         ctx.lineTo(this.x, this.maxY);
         ctx.fill();
 

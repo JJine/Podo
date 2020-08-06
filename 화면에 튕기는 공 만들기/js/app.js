@@ -5,7 +5,7 @@ import {
 import {
     Block
 }from './block.js';
-
+ 
 class App {
     constructor() {
         this.canvas = document.createElement('canvas');
@@ -29,7 +29,7 @@ class App {
 
         this.canvas.width = this.stageWidth  * 2;
         this.canvas.height = this.stageHeight * 2;
-        this.ctx.scale(2,2);
+        this.ctx.scale(2, 2);
     }   
 
     animate(t) {
@@ -37,10 +37,9 @@ class App {
 
         this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeight);
         this.block.draw(this.ctx);
-        this.ball.draw(this.ctx, this. stageWidth, this.stageHeight);
+        this.ball.draw(this.ctx, this.stageWidth, this.stageHeight, this.block);
     }
 }
-
 
 window.onload = () => {
     new App();
